@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diseno 3 | Minimal premium</title>
+  <style>
+    :root{
+      --bg:#f8f8f6; --paper:#fff; --text:#191919; --muted:#666; --line:#e7e4dc;
+      --gold:#a98d57; --dark:#27251f;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:"Segoe UI",Inter,Arial,sans-serif;background:var(--bg);color:var(--text)}
+    .container{width:min(1080px,92%);margin:auto}
+    header{padding:1rem 0;border-bottom:1px solid var(--line);background:rgba(248,248,246,.86);backdrop-filter:blur(6px);position:sticky;top:0}
+    .nav{display:flex;justify-content:space-between;align-items:center}
+    .brand{font-family:Georgia,serif;font-size:1.3rem;letter-spacing:.5px}
+    .menu{list-style:none;display:flex;gap:1rem;font-size:.92rem;color:var(--muted)}
+    .hero{padding:4.2rem 0 3rem;text-align:center}
+    .hero small{letter-spacing:2px;color:var(--gold);text-transform:uppercase;font-weight:700}
+    .hero h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.08;max-width:17ch;margin:.7rem auto}
+    .hero p{max-width:65ch;margin:auto;color:var(--muted)}
+    .cta{margin-top:1rem}
+    .cta a{display:inline-block;padding:.72rem 1.1rem;border:1px solid var(--dark);background:var(--dark);color:#fff;border-radius:9px;text-decoration:none}
+    section{margin:1.2rem 0}
+    .band{height:1px;background:linear-gradient(90deg,transparent,#cbc3b2,transparent);margin:2rem 0}
+    .title{margin-bottom:.7rem}
+    .title h2{font-size:1.35rem}
+    .title p{font-size:.9rem;color:var(--muted)}
+    .grid{display:grid;gap:.9rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    .card{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:1rem}
+    .card h3{margin-bottom:.35rem}
+    .card p,.card li{font-size:.93rem;color:var(--muted)}
+    .pill{display:inline-block;border:1px solid #d6c8a4;color:#876e3b;background:#fbf7ee;border-radius:999px;padding:.12rem .52rem;font-size:.75rem;margin-bottom:.45rem}
+    ul{padding-left:1.1rem}
+    footer{margin-top:2rem;border-top:1px solid var(--line);padding:1rem 0;color:var(--muted);font-size:.9rem}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">Atelier Financiero</div>
+      <ul class="menu"><li>Inicio</li><li>Firma</li><li>Servicios</li><li>Blog</li><li>Contacto</li></ul>
+    </div>
+  </header>
+  <main class="container">
+    <section class="hero">
+      <small>Firma de asesoria financiera</small>
+      <h1>Estrategia, orden y crecimiento para empresas</h1>
+      <p>Estilo minimal premium para transmitir seriedad, confianza y alto valor profesional.</p>
+      <div class="cta"><a href="#servicios">Conocer propuesta</a></div>
+    </section>
+
+    <div class="band"></div>
+
+    <section>
+      <div class="title"><h2>Quienes somos</h2><p>Historia, mision, vision y socios</p></div>
+      <div class="grid">
+        <article class="card"><h3>Historia</h3><p>Nacimiento de la firma y evolucion del proyecto.</p></article>
+        <article class="card"><h3>Mision y vision</h3><p>Direccion estrategica de largo plazo y enfoque en resultados.</p></article>
+        <article class="card"><h3>Socios</h3><p>Equipo con experiencia en finanzas corporativas y consultoria.</p></article>
+      </div>
+    </section>
+
+    <section id="servicios">
+      <div class="title"><h2>Servicios</h2><p>Asesoria integral para toma de decisiones</p></div>
+      <div class="grid">
+        <article class="card"><h3>Consultoria</h3><p>Diagnostico y planeacion financiera.</p></article>
+        <article class="card"><h3>Aliados inversionistas</h3><p>Preparacion para rondas y estructuracion.</p></article>
+        <article class="card"><h3>Oportunidades</h3><p>Espacio para oportunidades de inversion.</p></article>
+      </div>
+    </section>
+
+    <section>
+      <div class="title"><h2>Blog y clientes</h2><p>Contenido y evidencia</p></div>
+      <div class="grid">
+        <article class="card">
+          <span class="pill">Blog</span>
+          <h3>Articulo destacado</h3>
+          <p>Como fortalecer liquidez y rentabilidad en etapas de crecimiento.</p>
+        </article>
+        <article class="card">
+          <span class="pill">Clientes</span>
+          <h3>Experiencia reciente</h3>
+          <ul><li>Cliente A - Flujo de caja</li><li>Cliente B - Inversion</li></ul>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container">Diseno 3: Minimal premium.</div></footer>
+</body>
+</html>

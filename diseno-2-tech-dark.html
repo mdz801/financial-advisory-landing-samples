@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diseno 2 | Tech oscuro</title>
+  <style>
+    :root{
+      --bg:#070b17; --panel:#0f1731; --text:#f4f7ff; --muted:#aab6d6; --line:#24335f;
+      --accent:#ff315b; --accent2:#7a5cff;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Inter,Segoe UI,Arial,sans-serif;background:radial-gradient(circle at top right,#1a1450 0%,var(--bg) 50%);color:var(--text)}
+    .container{width:min(1120px,94%);margin:auto}
+    header{padding:1rem 0;position:sticky;top:0;backdrop-filter:blur(8px);background:rgba(7,11,23,.65);border-bottom:1px solid rgba(255,255,255,.08)}
+    .nav{display:flex;justify-content:space-between;align-items:center}
+    .brand{font-weight:800;letter-spacing:.4px}
+    .brand span{color:#ff5b7d}
+    .menu{display:flex;gap:1rem;list-style:none;color:#d7def8;font-size:.92rem}
+    .hero{min-height:74vh;display:grid;place-items:center;text-align:center;padding:2rem 0}
+    .hero h1{font-size:clamp(2.1rem,5vw,4rem);line-height:1.05}
+    .hero h1 em{font-style:normal;color:var(--accent)}
+    .hero p{color:var(--muted);max-width:68ch;margin:.9rem auto 1.2rem}
+    .cta{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap}
+    .btn{padding:.75rem 1.1rem;border-radius:999px;font-weight:700;text-decoration:none;border:1px solid transparent}
+    .btn.primary{background:linear-gradient(120deg,var(--accent),#ff5b7d);color:#fff}
+    .btn.ghost{border-color:#44538b;color:#d9e3ff;background:rgba(255,255,255,.02)}
+    .line{height:1px;background:linear-gradient(90deg,transparent,#404f81,transparent);margin:1.2rem 0}
+    section{margin:1.1rem 0}
+    h2{font-size:1.3rem;margin-bottom:.8rem}
+    .grid{display:grid;gap:.9rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.03),transparent),var(--panel);border:1px solid var(--line);border-radius:16px;padding:1rem}
+    .card h3{margin-bottom:.35rem}
+    .card p,.card li{color:var(--muted);font-size:.93rem}
+    .step{display:grid;grid-template-columns:34px 1fr;gap:.7rem;align-items:start}
+    .num{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(130deg,var(--accent2),var(--accent));font-weight:700}
+    .chip{display:inline-block;border:1px solid #3f4e83;border-radius:999px;padding:.15rem .55rem;font-size:.76rem;color:#cbd8ff;margin-bottom:.45rem}
+    ul{padding-left:1.1rem}
+    footer{padding:1rem 0 1.4rem;color:#a3afcf}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">FIRMA<span>AI</span></div>
+      <ul class="menu"><li>Home</li><li>Soluciones</li><li>Recursos</li><li>Compania</li></ul>
+    </div>
+  </header>
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>Asesoria financiera <em>potenciada por estrategia</em></h1>
+        <p>Diseño tipo portada: impacto inicial y contenido progresivo al hacer scroll.</p>
+        <div class="cta">
+          <a class="btn primary" href="#servicios">Solicitar demo</a>
+          <a class="btn ghost" href="#blog">Ver contenido</a>
+        </div>
+      </div>
+    </section>
+    <div class="line"></div>
+
+    <section id="servicios">
+      <h2>Servicios clave</h2>
+      <div class="grid">
+        <article class="card"><h3>Consultoria estrategica</h3><p>Planeacion, indicadores y acompanamiento de decision.</p></article>
+        <article class="card"><h3>Aliados inversionistas</h3><p>Estructuracion y conexion con red de capital.</p></article>
+        <article class="card"><h3>Oportunidades</h3><p>Radar de oportunidades para expansion y nuevos proyectos.</p></article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Como funciona</h2>
+      <div class="grid">
+        <article class="card step"><div class="num">1</div><div><h3>Captura</h3><p>Levantamiento de informacion financiera.</p></div></article>
+        <article class="card step"><div class="num">2</div><div><h3>Analisis</h3><p>Escenarios de riesgo y crecimiento.</p></div></article>
+        <article class="card step"><div class="num">3</div><div><h3>Accion</h3><p>Ejecucion de plan y seguimiento.</p></div></article>
+      </div>
+    </section>
+
+    <section id="blog">
+      <h2>Blog y clientes</h2>
+      <div class="grid">
+        <article class="card"><span class="chip">Blog</span><h3>Errores de flujo de caja</h3><p>Articulo simulado para educar y posicionar marca.</p></article>
+        <article class="card"><span class="chip">Casos</span><h3>Clientes destacados</h3><ul><li>Cliente A</li><li>Cliente B</li></ul></article>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container">Diseno 2: Tech oscuro con portada de alto impacto.</div></footer>
+</body>
+</html>

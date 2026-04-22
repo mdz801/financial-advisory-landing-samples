@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diseno 1 | Corporativo sobrio</title>
+  <style>
+    :root{
+      --bg:#f5f7fb; --card:#fff; --text:#182033; --muted:#5f6b85; --line:#e1e7f2;
+      --primary:#1d2c6b; --accent:#2f80ff;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--text)}
+    .container{width:min(1100px,94%);margin:auto}
+    header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0}
+    .nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 0}
+    .brand{font-weight:800;color:var(--primary)}
+    .menu{display:flex;gap:1rem;list-style:none;color:var(--muted);font-size:.92rem}
+    .hero{padding:4rem 0 2.5rem}
+    .hero h1{font-size:clamp(1.8rem,4vw,2.8rem);max-width:18ch}
+    .hero p{color:var(--muted);margin-top:.8rem;max-width:70ch}
+    .cta{margin-top:1rem;display:flex;gap:.7rem}
+    .btn{padding:.7rem 1rem;border-radius:10px;font-weight:700;text-decoration:none}
+    .btn.primary{background:var(--accent);color:#fff}
+    .btn.soft{border:1px solid var(--line);color:var(--text)}
+    section{margin:1rem 0}
+    .title{display:flex;justify-content:space-between;align-items:center;margin-bottom:.8rem}
+    .title p{color:var(--muted);font-size:.9rem}
+    .grid{display:grid;gap:.9rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1rem}
+    .card h3{margin-bottom:.35rem}
+    .card p,.card li{color:var(--muted);font-size:.94rem}
+    .chip{display:inline-block;background:#edf4ff;border:1px solid #c8dbff;color:#2562bb;border-radius:999px;padding:.15rem .55rem;font-size:.76rem;margin-bottom:.5rem}
+    ul{padding-left:1.1rem}
+    footer{margin-top:2rem;padding:1rem 0;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">FirmaCapital</div>
+      <ul class="menu"><li>Inicio</li><li>Servicios</li><li>Blog</li><li>Clientes</li><li>Contacto</li></ul>
+    </div>
+  </header>
+  <main class="container">
+    <section class="hero">
+      <h1>Asesoria financiera para decisiones de alto impacto</h1>
+      <p>Propuesta clara para presentar marca, servicios, contenido y confianza comercial.</p>
+      <div class="cta">
+        <a class="btn primary" href="#servicios">Ver servicios</a>
+        <a class="btn soft" href="#contacto">Solicitar reunion</a>
+      </div>
+    </section>
+
+    <section>
+      <div class="title"><h2>Sobre la firma</h2><p>Historia, mision, socios</p></div>
+      <div class="grid">
+        <article class="card"><h3>Historia</h3><p>Origen de la firma y proposito empresarial en el mediano plazo.</p></article>
+        <article class="card"><h3>Mision y vision</h3><p>Mision: claridad financiera. Vision: aliado estrategico de crecimiento.</p></article>
+        <article class="card"><h3>Socios</h3><p>Perfiles profesionales con enfoque en planeacion e inversion.</p></article>
+      </div>
+    </section>
+
+    <section id="servicios">
+      <div class="title"><h2>Servicios</h2><p>Consultoria + inversion + oportunidades</p></div>
+      <div class="grid">
+        <article class="card"><h3>Consultoria estrategica</h3><p>Diagnostico, planeacion, seguimiento ejecutivo.</p></article>
+        <article class="card"><h3>Aliados inversionistas</h3><p>Conexion y estructuracion de propuestas de valor.</p></article>
+        <article class="card"><h3>Oportunidades</h3><p>Publicacion de oportunidades para clientes e inversion.</p></article>
+      </div>
+    </section>
+
+    <section>
+      <div class="title"><h2>Blog y clientes</h2><p>Contenido para educar y generar confianza</p></div>
+      <div class="grid">
+        <article class="card">
+          <span class="chip">Estrategia</span>
+          <h3>3 errores financieros comunes</h3>
+          <p>Articulo simulado para mostrar tono editorial y valor informativo.</p>
+        </article>
+        <article class="card">
+          <h3>Clientes</h3>
+          <ul>
+            <li>Cliente A - Planeacion financiera</li>
+            <li>Cliente B - Estructuracion de inversion</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="title"><h2>Contacto</h2><p>Listo para cotizar</p></div>
+      <article class="card">
+        <p>Correo: contacto@firma.com</p>
+        <p>Telefono: +57 300 000 0000</p>
+      </article>
+    </section>
+  </main>
+  <footer><div class="container">Diseno 1: Corporativo sobrio.</div></footer>
+</body>
+</html>
