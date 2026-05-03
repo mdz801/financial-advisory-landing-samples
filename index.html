@@ -3,28 +3,200 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Muestras de diseno</title>
+  <meta name="description" content="Cuatro muestras HTML de landing para asesoría financiera: misma estructura, distintos estilos visuales.">
+  <title>Muestras de diseño | Landing financiera</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    body{font-family:Inter,Segoe UI,Arial,sans-serif;background:#f4f6fb;color:#1c2438;margin:0}
-    .wrap{width:min(900px,92%);margin:3rem auto}
-    h1{margin-bottom:.5rem}
-    p{color:#5d6881}
-    .grid{margin-top:1rem;display:grid;gap:.9rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-    a{display:block;padding:1rem;background:#fff;border:1px solid #dfe6f3;border-radius:12px;color:inherit;text-decoration:none}
-    a strong{display:block;margin-bottom:.35rem}
-    a span{color:#5d6881;font-size:.92rem}
+    :root {
+      --bg: #eef1f8;
+      --bg-accent: #e4e9f4;
+      --surface: #ffffff;
+      --border: #d8e0ef;
+      --text: #121826;
+      --muted: #5c667a;
+      --accent: #c41e2e;
+      --accent-soft: rgba(196, 30, 46, 0.08);
+      --radius: 14px;
+      --shadow: 0 1px 2px rgba(18, 24, 38, 0.04), 0 8px 24px rgba(18, 24, 38, 0.06);
+      --shadow-hover: 0 4px 12px rgba(18, 24, 38, 0.08), 0 16px 40px rgba(18, 24, 38, 0.1);
+      --font: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: var(--font);
+      color: var(--text);
+      background:
+        radial-gradient(ellipse 120% 80% at 50% -20%, rgba(196, 30, 46, 0.07), transparent 55%),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg-accent) 100%);
+      line-height: 1.55;
+    }
+
+    .shell {
+      width: min(920px, 92%);
+      margin: 0 auto;
+      padding: clamp(2.5rem, 6vw, 4rem) 0 clamp(3rem, 8vw, 5rem);
+    }
+
+    header {
+      margin-bottom: clamp(2rem, 5vw, 2.75rem);
+      max-width: 36rem;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 0.35rem 0.65rem;
+      border-radius: 999px;
+      margin-bottom: 0.85rem;
+    }
+
+    h1 {
+      font-size: clamp(1.75rem, 4vw, 2.25rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin: 0 0 0.65rem;
+    }
+
+    .lede {
+      margin: 0;
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 32rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      padding: 1.15rem 1.25rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      color: inherit;
+      text-decoration: none;
+      transition: border-color 0.2s, box-shadow 0.25s, transform 0.2s;
+    }
+
+    .card:hover {
+      border-color: rgba(196, 30, 46, 0.35);
+      box-shadow: var(--shadow-hover);
+      transform: translateY(-2px);
+    }
+
+    .card:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    .card-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    .card strong {
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      line-height: 1.35;
+    }
+
+    .card span {
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    .badge {
+      flex-shrink: 0;
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 0.25rem 0.5rem;
+      border-radius: 6px;
+    }
+
+    .arrow {
+      margin-top: 0.35rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
   </style>
 </head>
 <body>
-  <main class="wrap">
-    <h1>3 propuestas para presentar</h1>
-    <p>Misma estructura, tres estilos distintos para elegir direccion visual.</p>
-    <section class="grid">
-      <a href="./propuesta-principal.html"><strong>Propuesta principal (scroll + transiciones)</strong><span>Version completa estilo tech usada como referencia principal</span></a>
-      <a href="./diseno-1-corporativo.html"><strong>Diseno 1 - Corporativo sobrio</strong><span>Seguro, limpio y facil de aprobar</span></a>
-      <a href="./diseno-2-tech-dark.html"><strong>Diseno 2 - Tech oscuro</strong><span>Impacto alto, portada protagonista</span></a>
-      <a href="./diseno-3-minimal-premium.html"><strong>Diseno 3 - Minimal premium</strong><span>Elegante, serio y de alto valor</span></a>
+  <main class="shell">
+    <header>
+      <span class="eyebrow">Portfolio</span>
+      <h1>Muestras de landing para asesoría financiera</h1>
+      <p class="lede">Misma estructura de contenido, cuatro direcciones visuales para comparar y elegir la que mejor encaje con la marca.</p>
+    </header>
+
+    <section class="grid" aria-label="Enlaces a las propuestas">
+      <a class="card" href="./propuesta-principal.html">
+        <div class="card-top">
+          <strong>Propuesta principal</strong>
+          <span class="badge">Referencia</span>
+        </div>
+        <span>Scroll largo, secciones claras y microinteracciones. Estilo tech oscuro inspirado en la referencia del proyecto.</span>
+        <span class="arrow">Abrir muestra →</span>
+      </a>
+      <a class="card" href="./diseno-1-corporativo.html">
+        <div class="card-top">
+          <strong>Diseño 1 · Corporativo sobrio</strong>
+        </div>
+        <span>Seguro, limpio y fácil de aprobar en contextos conservadores.</span>
+        <span class="arrow">Abrir muestra →</span>
+      </a>
+      <a class="card" href="./diseno-2-tech-dark.html">
+        <div class="card-top">
+          <strong>Diseño 2 · Tech oscuro</strong>
+        </div>
+        <span>Alto impacto visual, portada protagonista y sensación de producto digital.</span>
+        <span class="arrow">Abrir muestra →</span>
+      </a>
+      <a class="card" href="./diseno-3-minimal-premium.html">
+        <div class="card-top">
+          <strong>Diseño 3 · Minimal premium</strong>
+        </div>
+        <span>Elegante y sobrio, con sensación de alto valor y poco ruido visual.</span>
+        <span class="arrow">Abrir muestra →</span>
+      </a>
     </section>
+
+    <footer>
+      Archivos estáticos en esta carpeta: abre cualquier enlace en el navegador para revisar la propuesta completa.
+    </footer>
   </main>
 </body>
 </html>
