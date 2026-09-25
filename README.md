@@ -1,24 +1,24 @@
-# Financial Advisory Landing Page Samples
+# Propuestas de Landing Page Financiera
 
-A collection of responsive landing-page concepts for a financial advisory website.
+> **Tipo de proyecto:** Prototipo visual / propuesta de diseño
 
-The repository explores several visual directions before selecting a final implementation.
+Colección de propuestas visuales desarrolladas para comparar distintos enfoques de una landing page orientada a servicios de asesoría financiera.
 
-## Included Concepts
+## Propuestas incluidas
 
-- Corporate design
-- Dark technology-oriented design
-- Minimal premium design
-- Main proposal
-- Combined sample view
+- Diseño corporativo
+- Diseño tecnológico oscuro
+- Diseño minimalista premium
+- Propuesta principal
+- Vista comparativa de muestras
 
-## Tech Stack
+## Tecnologías
 
 - HTML5
 - CSS3
-- Vanilla JavaScript
+- JavaScript
 
-## Files
+## Archivos principales
 
 ```text
 index.html
@@ -29,10 +29,14 @@ muestras.html
 propuesta-principal.html
 ```
 
-## Running Locally
+## Ejecución
 
-No build process is required. Clone the repository and open `index.html` in a browser.
+No requiere proceso de compilación. Basta con abrir `index.html` en un navegador.
+
+## Nota
+
+Este repositorio contiene propuestas y prototipos visuales, no un sitio de producción.
 
 ---
 
-**Author:** Miguel Martínez
+**Autor:** Miguel Martínez
